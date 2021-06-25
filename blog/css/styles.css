@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+    --fuentePrincipal: 'PT Sans', sans-serif;
+    --fuenteHeadings: 'Montserrat', sans-serif;
+    --blanco: #FFF;
+    --negro: #000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.6rem;
+}
+
+span {
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuenteHeadings);
+}
+
+p {
+    font-family: var(--fuentePrincipal);
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    background-image: url(../img/beer.jpg);
+    box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60rem;
+}
+
+.barra a {
+    color: var(--blanco);
+}
+
+.barra a h1 {
+    margin: 0;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.navegacion-principal a {
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
+
+    .navegacion-principal {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+
+.contenido-header {
+    text-align: center;
+    color: var(--blanco);
+    padding-top: 10rem;
+}
+
+.contenido-header h2 {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.contenido-header p {
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    margin-top: .5rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        column-gap: 4rem;
+    }
+}
+
+.entrada-contenido p {
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.entrada {
+    border-bottom: 1px solid #BFC9CA;
+    margin: 2rem;
+}
+
+.entrada:last-of-type {
+    border: none;
+}
+
+.entrada .boton {
+    margin: 2rem 0;
+}
+
+.boton {
+    display: block;
+    text-align: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: var(--fuenteHeadings);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        background-color: var(--negro);
+        color: var(--blanco);
+        font-family: var(--fuenteHeadings);
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 1rem 0;
+        padding: 2rem 3rem;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.footer {
+    background-color: var(--negro);
+    padding: 2rem 0;
+}
+
+.footer p {
+    color: var(--blanco);
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0 0 0;
+}
